@@ -1,0 +1,22 @@
+#!/bin/sh
+
+set -e
+
+if [ -z "$NVIM_APPNAME" ]; then
+	export NVIM_APPNAME="nvim"
+fi
+
+from=$(dirname "$(readlink -f "$0")")
+to="$HOME/.config/$NVIM_APPNAME"
+
+rm -rf "$HOME/.cache/nvim"
+rm -rf "$HOME/.cache/$NVIM_APPNAME"
+rm -rf "$HOME/.local/state/nvim"
+rm -rf "$HOME/.local/state/$NVIM_APPNAME"
+rm -rf "$HOME/.local/share/nvim"
+rm -rf "$HOME/.local/share/$NVIM_APPNAME"
+
+ln -nsf "$from" "$to"
+
+set +e
+nvim
