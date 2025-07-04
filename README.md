@@ -64,10 +64,10 @@ buffers).
 ## Installation + Quickstart
 
 > [!CAUTION]
-> Before you start backup your `$HOME/.config/nvim` directory. Please
-> read the `./install` script before running it! I'm not responsible for any
-> damage. This repository is primary for me to backing up my personal custom
-> configuration, but maybe it is beneficial to you.
+> Before you start backup your `$HOME/.config/nvim` directory. Please read the
+> `./install` script before running it! I'm not responsible for any damage. This
+> repository is primary for me to backing up my personal custom configuration,
+> but maybe it is beneficial to you.
 
 You should fork this repo in a seperate branch, so you can adjust my
 configuration for your personal needs.
@@ -163,12 +163,13 @@ fallback to the traditional `<C-s>` binding.
 Trusted mode in VSCode is disabled, you want to browse and validate unknown
 projects in NeoVim, not your full-fledged IDE.
 
-Please install the [recommend extensions](.vscode/extensions.json). Simply open
-this repository in VSCode and accept installing suggested extensions to make
-everything work properly.
+Next, please install the [recommend extensions](.vscode/extensions.json). Simply
+open this repository in VSCode and accept installing suggested extensions to
+make everything work properly.
 
-> [!NOTE] You can link the configurations to all IDEs to keep it in sync with
-> this repository:
+> [!NOTE]
+> You can link the configurations to all IDEs to keep it in sync with this
+> repository:
 >
 > I.e. on macOS:
 >
@@ -181,9 +182,10 @@ everything work properly.
 > ln -sf "$(pwd)/.vscode/keybindings.json" "$HOME/Library/Application Support/Windsurf/User/keybindings.json"
 > ```
 
-> [!WARNING] The Cascade window in Windsurf has no proper focus clause for the
-> keybinding setup, so leader keyboard shortcuts will only work in the editor
-> window while it's open. Cascade can be toggled via `<C-l>`.
+> [!WARNING]
+> The Cascade window in Windsurf has no proper focus clause for the keybinding
+> setup, so leader keyboard shortcuts will only work in the editor window while
+> it's open. Cascade can be toggled via `<C-l>`.
 
 ### FireNvim
 
@@ -261,5 +263,6 @@ applied. **If you save all buffers all changes will be applied.**
 - To undo everything, just `ZQ` and restart `vim` which will reload your
   previous session before starting the entire operation
 
-> [!INFO] Keep NeoVim LSP free to keep it snappy and fast. Use VSCodium for
-> everything else.
+> [!INFO]
+> Keep NeoVim LSP free to keep it snappy and fast. Use VSCodium for everything
+> else.
