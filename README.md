@@ -132,10 +132,10 @@ there, simply **f**ind your **k**eymaps via `<Space>fk` or just explore
 [keymaps.lua](./lua/keymap.lua) and
 [telescope_maps.lua](./lua/maps/telescope_maps.lua)
 
-> [!NOTE]
-> Remember to put your `Session.vim` into your (global) `.gitignore` so the
-> permanent session storage does not become part of your working changes in any
-> local git repository.
+> [!TIP]
+> If you put `Session.vim` into your (global) `.gitignore`, the permanent
+> session storage does not become part of your working changes in any local git
+> repository.
 
 ## Update
 
@@ -160,8 +160,9 @@ share the same keybindings. Tabs are hidden, `<leader>b` will browse these.
 your tab management clean. Use window splitters to keep relevant buffers open or
 fallback to the traditional `<C-s>` binding.
 
-Trusted mode in VSCode is disabled, you want to browse and validate unknown
-projects in NeoVim, not your full-fledged IDE.
+> [!IMPORTANT]
+> Trusted mode in VSCode is disabled, you want to browse and validate unknown
+> projects in NeoVim, not your full-fledged IDE.
 
 Next, please install the [recommend extensions](.vscode/extensions.json). Simply
 open this repository in VSCode and accept installing suggested extensions to
@@ -200,8 +201,6 @@ The plugin always needs to load to ensure it being installed prior browser
 usage, since it can't hook nvim into the browser before that.
 
 ## FAQ
-
-### How does the persistent storage work?
 
 ### How to hide files ignored by `.gitignore` when doing `<C-e>` (`netrw`)?
 
