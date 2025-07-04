@@ -1,5 +1,3 @@
-tee: /Users/mbx/.config/nvim/.tmp/.fmt: No such file or directory
-
 # MinVim
 
 My fast simple minimal well-structured NeoVim configuration.
