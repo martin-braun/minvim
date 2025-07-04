@@ -63,7 +63,8 @@ buffers).
 
 ## Installation + Quickstart
 
-> [!CAUTION] Before you start backup your `$HOME/.config/nvim` directory. Please
+> [!CAUTION]
+> Before you start backup your `$HOME/.config/nvim` directory. Please
 > read the `./install` script before running it! I'm not responsible for any
 > damage. This repository is primary for me to backing up my personal custom
 > configuration, but maybe it is beneficial to you.
