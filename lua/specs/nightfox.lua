@@ -8,8 +8,8 @@ M.opts = {
     options = { transparent = true },
     groups = {
         all = {
-            Visual = { bg = "#edc57d" }, -- Example colors
-            Whitespace = { fg = "#f06372" }, -- Example colors
+            Visual = { bg = "#edc57d" },
+            Whitespace = { fg = "#f06372" }, -- ghost chars
         },
     },
 }

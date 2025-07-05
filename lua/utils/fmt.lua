@@ -157,11 +157,11 @@ end
 
 M.buf_tabify = function()
     vim.opt_local.expandtab = false
-    vim.opt_local.listchars = { -- from ./lua/buffer.lua with an invisible space
+    vim.opt_local.listchars = { -- from ./lua/buffer.lua with an invisible tab
         space = ' ',
         tab = '  ',
         multispace = '·',
-        lead = ' ',
+        lead = '·',
         trail = '•',
         nbsp = '⋯'
     }
