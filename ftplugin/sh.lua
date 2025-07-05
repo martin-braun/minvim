@@ -1,3 +1,5 @@
 local fmt = require("utils.fmt")
 fmt.buf_tabify()
-fmt.buf_try_use({ "shfmt" })
+if not fmt.buf_try_use({ "shfmt" }) then
+    fmt.buf_disable()
+end
