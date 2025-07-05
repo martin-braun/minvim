@@ -22,7 +22,7 @@ nnoremap <leader>yf <CMD>let @+=expand("%")<CR>
 nnoremap <leader>yF <CMD>let @+=expand("%:p")<CR>
 nnoremap <leader>x <CMD>bd<CR>
 nnoremap <leader>X <CMD>bd!<CR>
-nnoremap <leader>ff <CMD>gg=G''<CR>
+nnoremap <leader>ff gg=G''
 nnoremap <C-s> <CMD>w<CR>
 nnoremap <leader>ss <CMD>wa<CR>
 nnoremap <C-w>s <CMD>split<CR><CMD>wincmd j<CR>
