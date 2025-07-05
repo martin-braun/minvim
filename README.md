@@ -261,7 +261,3 @@ applied. **If you save all buffers all changes will be applied.**
   again
 - To undo everything, just `ZQ` and restart `vim` which will reload your
   previous session before starting the entire operation
-
-> [!INFO]
-> Keep NeoVim LSP free to keep it snappy and fast. Use VSCodium for everything
-> else.
