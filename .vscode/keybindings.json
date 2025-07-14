@@ -727,6 +727,11 @@
     "when": "windsurf.cascadePanel.active && view.windsurf.cascadePanel.visible"
   },
   {
+    "key": "alt+l",
+    "command": "-codeium.chatAboutBlock",
+    "when": "editorTextFocus && !inlineSuggestionsVisible"
+  }
+  {
     "key": "ctrl+h",
     "command": "windsurf.prioritized.explainProblem",
     "when": "windsurf.cascadePanel.active && editorFocus"
