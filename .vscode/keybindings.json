@@ -119,7 +119,13 @@
         { "command": "editorScroll", "args": { "to": "up", "by": "page" } }
       ]
     },
-    "when": "editorTextFocus"
+    "when": "editorTextFocus && neovim.mode != 'insert'"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "vscode-neovim.send",
+    "args": "<C-b>",
+    "when": "editorTextFocus && neovim.mode == 'insert'"
   },
   {
     "key": "ctrl+u",
@@ -152,7 +158,13 @@
         { "command": "editorScroll", "args": { "to": "down", "by": "page" } }
       ]
     },
-    "when": "editorTextFocus"
+    "when": "editorTextFocus && neovim.mode != 'insert'"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "vscode-neovim.send",
+    "args": "<C-f>",
+    "when": "editorTextFocus && neovim.mode == 'insert'"
   },
   {
     "key": "escape",
@@ -714,7 +726,7 @@
   },
   {
     "key": "ctrl+l",
-    "command": "workbench.panel.chat",
+    "command": "workbench.panel.chat"
   },
   {
     "key": "ctrl+l",
