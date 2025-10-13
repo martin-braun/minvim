@@ -239,8 +239,22 @@ M.config = function()
         { desc = "Quick Fix..." }
     )
 
+    -- windsurf extension
+    vim.keymap.set(
+        'i',
+        "<C-f>",
+        "<CMD>call VSCodeCall('codeium.showNextCompletion')<CR>",
+        { desc = "Show Next Completion" }
+    )
+    vim.keymap.set(
+        'i',
+        "<C-b>",
+        "<CMD>call VSCodeCall('codeium.showPreviousCompletion')<CR>",
+        { desc = "Show Previous Completion" }
+    )
+
     if fork == "windsurf" then
-        ---- Windsurf exclusives
+        ---- Windsurf IDE exclusives
         vim.keymap.set(
             'n',
             "<leader>l",
@@ -254,7 +268,7 @@ M.config = function()
             { desc = "Editor Inline Chat" }
         )
     elseif fork == "code" then
-        ---- Microsoft VSCode exclusives
+        ---- Microsoft VSCode IDE exclusives
         vim.keymap.set(
             'n',
             "<leader>l",

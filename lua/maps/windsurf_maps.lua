@@ -33,22 +33,22 @@ M.config = function()
     -- cycle through suggestions
     vim.keymap.set(
         'n', "<leader>mn", "<CMD>call codeium#CycleCompletions(1)<CR>", {
-            desc = "Cycle to the next Windsurf sugestion"
+            desc = "Cycle to the next Windsurf suggestion"
         }
     )
     vim.keymap.set(
         'n', "<leader>mp", "<CMD>call codeium#CycleCompletions(-1)<CR>", {
-            desc = "Cycle to the previous Windsurf sugestion"
+            desc = "Cycle to the previous Windsurf suggestion"
         }
     )
     vim.keymap.set(
         'i', "<C-f>", "<CMD>call codeium#CycleCompletions(1)<CR>", {
-            desc = "Cycle to the next Windsurf sugestion"
+            desc = "Cycle to the next Windsurf suggestion"
         }
     )
     vim.keymap.set(
         'i', "<C-b>", "<CMD>call codeium#CycleCompletions(-1)<CR>", {
-            desc = "Cycle to the previous Windsurf sugestion"
+            desc = "Cycle to the previous Windsurf suggestion"
         }
     )
 
