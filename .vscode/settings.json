@@ -113,12 +113,15 @@
     "statusBar.noFolderBorder": "#77a3c4",
     "tab.activeBorder": "#77a3c4"
   },
-  "editor.rulers": [ 80 ],
+  "editor.rulers": [
+    80
+  ],
   "workbench.fontAliasing": "none",
   "workbench.startupEditor": "none",
   "workbench.editor.showTabs": "single",
   "editor.minimap.showSlider": "always",
   "editor.minimap.enabled": false,
   "dart.openDevTools": "flutter",
-  "telemetry.feedback.enabled": false
+  "telemetry.feedback.enabled": false,
+  "debug.onTaskErrors": "abort",
 }

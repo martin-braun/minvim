@@ -93,7 +93,7 @@ git checkout -b custom
 
 To support advanced formatting beyond treesitter, please install
 
-- `dprint` for markdown (global) and web files in general (project only)
+- `dprint` for markdown (global), json and web files in general (project only)
 - `prettier` optionally for markdown (global) and web files all galore (project
   only)
 - `shfmt` for sh files
@@ -116,13 +116,13 @@ alias vim='{ f() { command -v nvim >/dev/null 2>&1 && { export NVIM_APPNAME="nvi
 > `ssh-agent`. You can see its implementation
 > [here](https://gist.github.com/martin-braun/ffda926798d6a9334d92ab6e867252ce).
 > You can also just store your API key in plain text, since the API is free, but
-> it is not recommend. If you skip setting `DEEPL_AUTH_KEY` `deepl.vim` will not
-> load which is a fine option if you don't need translations integrated into
+> it is not recommend. If you skip setting `DEEPL_AUTH_KEY`, `deepl.vim` will
+> not load which is a fine option if you don't need translations integrated into
 > NeoVim. `deepl.vim` is also compatible with Visual Studio Code or one of its
-> supported forks, but you have to launch it from within `nvim`, unless you set
-> the `DEEPL_AUTH_KEY` environment variable in an alias that covers the
-> `code`/`windsurf` CLI launcher as well. Hence launching any VSCode forks from
-> your App Drawer will disable the plugin.
+> supported forks, but you have to launch the IDE from within `nvim`, unless you
+> set the `DEEPL_AUTH_KEY` environment variable in an alias that covers the
+> `code`/`windsurf` CLI launcher as well. This all leads to the fact that
+> launching any VSCode forks from your App Drawer will disable the plugin.
 
 ### Finalize
 
@@ -160,7 +160,7 @@ share the same keybindings. Tabs are hidden, `<leader>b` will browse these.
 your tab management clean. Use window splitters to keep relevant buffers open or
 fallback to the traditional `<C-s>` binding.
 
-> [!IMPORTANT]
+> [!CAUTION]
 > Trusted mode in VSCode is disabled, you want to browse and validate unknown
 > projects in NeoVim, not your full-fledged IDE.
 
@@ -168,7 +168,7 @@ Next, please install the [recommend extensions](.vscode/extensions.json). Simply
 open this repository in VSCode and accept installing suggested extensions to
 make everything work properly.
 
-> [!NOTE]
+> [!TIP]
 > You can link the configurations to all IDEs to keep it in sync with this
 > repository:
 >

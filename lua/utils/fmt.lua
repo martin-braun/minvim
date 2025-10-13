@@ -82,8 +82,9 @@ end
 
 M.buf_try_use = function(formatters, configured_only)
     if not wnd.is_terminal() then
-        -- IDEs have their own plugins and extensions to format code
-        return false
+        -- IDEs have their own plugins and extensions to format code,
+        -- so give a false positive, indicating that formatting worked.
+        return true
     end
     local tmp_fmt = vim.fn.stdpath('config') .. '/.tmp/.fmt'
     -- pre command:
@@ -174,3 +175,4 @@ M.buf_disable = function()
 end
 
 return M
+
