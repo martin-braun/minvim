@@ -13,3 +13,4 @@ vim.api.nvim_create_user_command(
     end,
     { nargs = 0, bang = false, desc = 'Wipeout all buffers not shown in a window' }
 )
+

@@ -14,3 +14,4 @@ M.get_ignored_files = function(pwd)
 end
 
 return M
+

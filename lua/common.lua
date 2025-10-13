@@ -27,3 +27,4 @@ vim.opt.wildignore:append {
 vim.opt.backup = false
 vim.opt.writebackup = false
 vim.opt.backupskip = '/tmp/*,/private/tmp/*,/private/var/tmp/*,/usr/local/var/tmp/*,/var/folders/*'
+

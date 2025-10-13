@@ -68,3 +68,4 @@ vim.api.nvim_create_user_command(
     end,
     { nargs = '*', bang = true, desc = 'Grep or substitute in current directory' }
 )
+

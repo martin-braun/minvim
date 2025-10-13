@@ -4,3 +4,4 @@ vim.opt_local.wrap = true
 if not fmt.buf_try_use({ "dprint", "prettier" }) then
     fmt.buf_disable()
 end
+

@@ -10,3 +10,4 @@ else
     vim.g.node_host_prog = nvm.get_node_lts_path() .. "/bin/neovim-node-host"
     vim.g.coc_node_path = nvm.get_node_lts_path() .. "/bin/node"
 end
+

@@ -5,3 +5,4 @@ if not fmt.buf_try_use({ "dprint", "prettier" }, true) then -- only configured
     vim.opt_local.shiftwidth = 2
     vim.opt_local.tabstop = 2
 end
+

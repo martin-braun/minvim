@@ -9,3 +9,4 @@ minvim.prgs = {
     zig = cmd.get_resolved_invoker_of("zig"),
     dart = cmd.get_resolved_invoker_of("dart"),
 }
+

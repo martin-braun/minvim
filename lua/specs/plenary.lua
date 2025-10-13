@@ -6,3 +6,4 @@ M.cond = wnd.is_terminal()
 M.lazy = true
 
 return M
+

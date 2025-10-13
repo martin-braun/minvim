@@ -16,3 +16,4 @@ M.get_resolved_invoker_of = function(command)
 end
 
 return M
+

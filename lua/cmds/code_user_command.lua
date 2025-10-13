@@ -15,3 +15,4 @@ vim.api.nvim_create_user_command(
         desc = 'Save all buffers and open current file in Codium or VSCode'
     }
 )
+

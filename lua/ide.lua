@@ -22,3 +22,4 @@ if wnd.is_code_ide() then
     -- bindings
     require("maps.vscode_maps").config()
 end
+
