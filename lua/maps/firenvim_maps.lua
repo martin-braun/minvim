@@ -7,6 +7,16 @@ M.config = function()
         desc = "Save all buffers and quit"
     })
 
+    -- grow window horizontally
+    vim.keymap.set('n', "<C-w>+", "<CMD>set lines+=8<CR>", {
+        desc = "Grow window horizontally"
+    })
+
+    -- shrink window horizontally
+    vim.keymap.set('n', "<C-w>-", "<CMD>set lines-=8<CR>", {
+        desc = "Shrink window horizontally"
+    })
+
 end
 
 return M
