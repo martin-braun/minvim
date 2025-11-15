@@ -277,5 +277,15 @@ if wnd.is_terminal() then
         desc = "Update plugins"
     })
 
+    -- open VSCode
+    vim.keymap.set('n', "gC", "<CMD>Code<CR>", {
+        desc = "Open current file in VSCode"
+    })
+
+    -- open Windsurf
+    vim.keymap.set('n', "gW", "<CMD>Windsurf<CR>", {
+        desc = "Open current file in Windsurf"
+    })
+
 end
 
