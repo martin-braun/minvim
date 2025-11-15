@@ -124,4 +124,5 @@
   "dart.openDevTools": "flutter",
   "telemetry.feedback.enabled": false,
   "debug.onTaskErrors": "abort",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
 }
