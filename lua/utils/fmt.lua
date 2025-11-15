@@ -9,6 +9,7 @@ local get_dprint_prgcall = function()
             ' --stdin ' .. '"' ..
             vim.fn.fnameescape(vim.api.nvim_buf_get_name(0)) .. '"'
     end
+    -- as fallback we use a local config in this vim configuration (nvim only):
     return minvim.prgs.dprint .. ' fmt' ..
         ' --stdin ' ..
         '"' .. vim.fn.fnameescape(vim.api.nvim_buf_get_name(0)) .. '"' ..
@@ -27,6 +28,7 @@ local get_prettier_prgcall = function()
             vim.fn.fnameescape(vim.api.nvim_buf_get_name(0)) ..
             '"'
     end
+    -- as fallback we use a local config in this vim configuration (nvim only):
     return minvim.prgs.prettier ..
         ' --stdin-filepath ' ..
         '"' .. vim.fn.fnameescape(vim.api.nvim_buf_get_name(0)) .. '"' ..
@@ -49,6 +51,7 @@ local get_rustfmt_prgcall = function()
         vim.tbl_contains(minvim.configured_formatters, "rustfmt") then
         return minvim.prgs.rustfmt
     end
+    -- as fallback we use a local config in this vim configuration (nvim only):
     return minvim.prgs.rustfmt ..
         ' --config-path ' ..
         '"' ..
