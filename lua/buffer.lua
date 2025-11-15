@@ -38,6 +38,7 @@ vim.api.nvim_create_autocmd({ 'BufReadPre' }, {
                 fvmrc = "json",
                 log = "log",
                 plist = "xml",
+                rc = "sh",
                 reg = "dosini",
                 stignore = "gitignore",
                 xaml = "xml",
