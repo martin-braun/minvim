@@ -26,6 +26,11 @@ nnoremap <leader>ff gg=G''
 nnoremap <C-s> <CMD>w<CR>
 nnoremap <leader>ss <CMD>wa<CR>
 nnoremap <C-w>s <CMD>split<CR><CMD>wincmd j<CR>
-
+nnoremap <C-w>v <CMD>vsplit<CR><CMD>wincmd l<CR>
 nnoremap <C-e> <CMD>Ex %:p:h<CR>
+nnoremap <C-n> <CMD>tabnew<CR>
+nnoremap <C-j> <CMD>tabn<CR>
+nnoremap <C-k> <CMD>tabp<CR>
+nnoremap <C-q> <CMD>tabc<CR>
 autocmd FileType netrw nnoremap <buffer> <C-e> <CMD>Rex<CR>
+
