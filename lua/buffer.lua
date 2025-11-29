@@ -61,8 +61,8 @@ vim.api.nvim_create_autocmd({ 'BufReadPre' }, {
     end,
 })
 
--- trigger ftplugins on VimEnter as well
-vim.api.nvim_create_autocmd("VimEnter", {
+-- trigger ftplugins on BufEnter as well
+vim.api.nvim_create_autocmd("BufEnter", {
   callback = function()
     vim.cmd("doautocmd <nomodeline> FileType")
   end,
