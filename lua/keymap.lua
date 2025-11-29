@@ -91,8 +91,7 @@ if wnd.is_terminal() then
         'n',
         "ZZ",
         "<CMD>wa<CR><CMD>BufQuitHidden<CR><CMD>mks!<CR><CMD>qa<CR>", {
-            desc = "Save all buffers, wipe hidden buffers, "
-                .. "store session and quit"
+            desc = "Save all buffers, wipe hidden buffers, " .. "store session and quit"
         }
     )
 
@@ -109,6 +108,11 @@ else
     })
 
 end
+
+-- toggle line numbers in buffer
+vim.keymap.set('n', "<leader>L", "<CMD>set nonumber! norelativenumber!<CR>", {
+    desc = "Toggle line numbers" }
+)
 
 -- quit all buffers
 vim.keymap.set('n', "ZQ", "<CMD>qa!<CR>", {

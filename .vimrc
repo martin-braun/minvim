@@ -25,6 +25,8 @@ nnoremap <leader>X <CMD>bd!<CR>
 nnoremap <leader>ff gg=G''
 nnoremap <C-s> <CMD>w<CR>
 nnoremap <leader>ss <CMD>wa<CR>
+nnoremap <leader>L <CMD>set nonumber! norelativenumber!<CR>
+nnoremap <leader>R <CMD>checktime<CR>
 nnoremap <C-w>s <CMD>split<CR><CMD>wincmd j<CR>
 nnoremap <C-w>v <CMD>vsplit<CR><CMD>wincmd l<CR>
 nnoremap <C-e> <CMD>Ex %:p:h<CR>
